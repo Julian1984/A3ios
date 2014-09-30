@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Proyecto Julián Gómez Fernández</title>
+   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0"/>
+   <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css" />
+   <style>
+        #login-button {
+            margin-top: 30px;
+        }     
+        img, object{
+                position:relative;
+                max-height:100%;
+                max-width:100%;
+                    } 
+      .rssBody ul, .rssRow {
+            background-color:#FFF;
+            margin-left: 0;
+            padding-left: 0;
+            list-style: none;
+        }
+      .rssRow h4 { margin: 0; font-size: 1.3em; letter-spacing: -1px; }
+        .rssRow h4 a { color: #F00;  }
+        .rssRow h4 a:hover { color: #fff ; }
+        .rssRow div { font-size: 0.7em; color: # 3FF; }
+        #test { color: #000 ; }
+    </style>   
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/cordova-2.5.0.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/fileopener.js"></script>
+    <script src="js/listado.js"></script>
+    <script src="js/botones.js"></script>
+	<script src="js/main.js"></script>
+    <script src="js/registro.js"></script>
+    <script src="js/index.js"></script>
+    <script>
+        var userID = 0;
+        var usuarioID;
+        var passwordID;
+       
+    </script>
+
+    <script src="js/update.js"></script>
+    <script src="js/disableTransition.js" type="text/javascript"></script>
+	<script type="text/javascript" src="js/jquery.ui.autocomplete.min.js"></script>
+		<script type="text/javascript" src="js/demo.js"></script>
+
+				
+			
+</head>
+<body>
+ 
+
+
+<div data-role="page" id="home"  data-theme="a">
+<div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="b">
+                <font size="1"><h1 align="center">A3: Agregador de Aplicaciones Accesibles</h1></font></div>
+  <div data-role="content">
+  
+     <fieldset data-role="controlgroup" data-theme="b" data-position="fixed">
+                        
+            <div id="logo_image_3" align="center" style="padding-bottom:5%;">
+              <p><img src="img/LogoA3.png" width=40%>
+        </div>
+            <div id="logo_image_4" align="center" style="padding-bottom:5%;"><img src="img/logo293-positivo.jpg" width=40%></div>
+         
+        <div data-role="content">
+            <form id="check-user" class="ui-body ui-body-a ui-corner-all" data-ajax="false">
+                <fieldset>
+                    <div class="ui-field-contain">
+                        <label for="usuario"><b>Introduce tu Usuario:</b></label>
+                        <input type="text" value="usuario" name="usuario" id="usuario"/>
+                    </div>                                 
+                    <div class="ui-field-contain">                                     
+                        <label for="password"><b>Introduce tu Contraseña:</b></label>
+                        <input type="password" value="contraseña" name="password" id="password"/>
+                    </div>
+                    <a id="boton_login" href="#botones" data-role="button" data-theme="b" data-icon="info">Login</a>
+                   <!-- <input type="button" data-theme="b" name="submit" id="submit" value="Iniciar sesión">-->
+                </fieldset>
+            </form>                             
+        </div>
+         </fieldset>
+   </div> 
+ <div data-role="footer" data-position="fixed">
+ <div data-role="navbar">
+  <ul>
+       <li><a id="boton_info" href="#pageinfo" data-role="button" data-theme="b" data-icon="info">Sobre</a></li>
+   </ul>
+  </div>
+
+</div>
+</div>
+
+
+<div data-role="page" data-dialog="true" id="pageinfo" data-theme="c" >
+  <div data-role="header">
+    <h1>Sobre A3.</h1>
+  </div>
+
+  <div data-role="main" class="ui-content" data-theme="a" >
+    <p>Esta aplicación ha sido creada por Julián Gómez Fernández como proyecto Fin de Carrera de la Ingeniería Técnica en Informática de Gestión durante el curso 2013/14.</p>
+    
+  </div>
+
+  <div data-role="footer">
+    <h1>JGF. 2013/14</h1>
+  </div>
+</div>
+
+
+<div data-role="page" id="botones">
+<div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="b">
+                <font size="1"><h1 align="center">A3: Agregador de Aplicaciones Accesibles</h1></font></div>
+  <div data-role="content">
+   <div data-role="main" class="ui-content">
+       <p><h3 class="ui-bar ui-bar-a ui-corner-all" align="center">Elegir Tipo de Discapacidad</h3></p>
+
+
+<div data-role="main" class="ui-content" >
+<form id="boton" class="ui-body ui-body-a ui-corner-all" data-ajax="false">
+<!-- <form method="post" action="Busqueda.js">-->
+      <fieldset data-role="controlgroup" data-theme="b" data-position="fixed">
+        <label for="Visual">Visual</label>
+        <input type="radio" name="Disc" id="Visual" value="Visual">
+        <p><p> </p> </p>
+        <label for="Auditiva">Auditiva</label>
+        <input type="radio" name="Disc" id="Auditiva" value="Auditiva">
+        <p><p> </p> </p>
+        <label for="Física">Física</label>
+        <input type="radio" name="Disc" id="Física" value="Física">
+        <p><p> </p> </p>
+        <label for="Mental">Mental</label>
+        <input type="radio" name="Disc" id="Mental" value="Mental">
+        <p><p> </p> </p>
+        <label for="Todas">Todas</label>
+        <input type="radio" name="Disc" id="Todas" value="Todas" checked>	
+        <p> <p><p> </p> </p></p>
+    	<input type="button" data-theme="b" name="submit2" id="submit2" value="Buscar"> 
+        <a id="boton_listado" href="#listado" data-role="button" data-theme="b" >Buscar2</a>
+      </fieldset>
+      
+  </form>         
+           
+     
+        
+ </div>
+ </div>
+</div> 
+
+</div>
+
+
+
+<div data-role="page" id="listado">
+<div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="b">
+                <font size="1"><h1 align="center">A3: Agregador de Aplicaciones Accesibles</h1></font></div>
+   <div data-theme="b" data-role="header" data-inset="true">
+        <h3>
+            Listado Aplicaciones
+        </h3>
+    </div>        
+    <div data-role="content">
+        <div class="example-wrapper" data-iscroll>
+            <ul data-role="listview"  id="app-list" data-theme="b">
+                
+            </ul>
+        </div>
+    </div>
+    <div data-theme="a" data-role="footer">
+    <li><a id="boton_info" href="#botones" data-role="button" data-theme="b" data-icon="back">Atrás</a></li>
+    
+        
+    </div>              
+</div>
+
+<div data-role="page" id="headline">
+    <div data-theme="a" data-role="header">
+        <a href="#listado" class="ui-btn-left" data-transition="slide" data-direction="reverse" data-theme="b">Atras</a>                        
+        <h3>
+            Información de la Aplicación
+        </h3>
+    </div>        
+    <div data-role="content">
+        <ul data-role="listview"  id="app-data" data-theme="b">
+           
+         
+        </ul>
+        <p></p>
+        <textarea id="textarea" data-theme="b"></textarea>
+       <!-- <button type="submit" value="mybtn" class="mybtn" data-target=""data-icon="info" data-iconpos="right" data-theme="b"data-inline="true">Ir a la AppStore</button>-->
+       <input
+    type="button"
+    name="verify"
+    id="verify"
+    data-inline="true"
+    data-icon="arrow-r" 
+    data-iconpos="info" 
+    data-theme="b" 
+    value="Ir a la AppStore" />
+               
+    </div>
+</div> 
+
+
+
+
+</body>

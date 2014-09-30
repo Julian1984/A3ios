@@ -1,0 +1,36 @@
+           
+      <h3 class="ui-bar ui-bar-a ui-corner-all">Información de la Aplicación</h3>
+      <div class="ui-body ui-body-a ui-corner-all">   
+     
+     <form> 
+      <div class="ui-field-contain">
+    <label for="textinput-1">Nombre:</label>
+    <input name="textinput-1" id="txt_nombre" placeholder="Text input" value="" type="text">
+</div>       
+             
+        <div class="ui-field-contain" data-theme="c">
+    <label for="textinput-1">Precio:</label>
+    <input name="textinput-1" id="txt_Precio" placeholder="Text input" value="" type="text">
+</div>         
+                      <div class="ui-field-contain">
+    <label for="textinput-1">Tipo Accesibilidad:</label>
+    <input name="textinput-1" id="txt_taccs" placeholder="Text input" value="" type="text">
+</div>
+           
+   <div class="ui-field-contain">
+    <label for="textarea-1">Resumen:</label>
+    <textarea cols="40" rows="8" name="txt_Resumen" id="textarea-1">Textarea</textarea>
+</div>               
+            </div>
+            
+            </form>
+<div data-role="footer" data-position="fixed" data-theme="b">
+     <div data-role="navbar">
+      <ul>
+        <li><a href="#" data-icon="home">Inicio</a></li>
+        <li><a href="#" data-icon="back">Atr'as</a></li>
+        <li><a href="#" data-icon="info">Sobre A3</a></li>
+      </ul>
+    </div>
+                        
+     </div>

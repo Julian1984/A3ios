@@ -1,0 +1,30 @@
+// Código para mostrar los programas.
+
+
+<div data-role="page"  id="lista" data-theme="a">
+            <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="b">
+                <font size="1"><h1 align="center">A3: Agregador de Aplicaciones Accesibles</h1></font></div>
+
+<ul data-role="listview" data-inset="false" data-theme="b">
+
+	<li><a href=".html">Programa</a></li>
+	<li><a href=".html">Programa</a></li>
+	<li><a href=".html">Programa </a></li>
+	<li><a href=".html">Programa</a></li>
+	<li><a href=".html">Programa</a></li>
+    <li><a href=".html">Programa </a></li>
+	<li><a href=".html">Programa</a></li>
+	<li><a href=".html">Programa</a></li>
+    <li><a href=".html">Programa </a></li>
+	<li><a href=".html">Programa</a></li>
+	<li><a href=".html">Programa</a></li>
+</ul>
+
+<div data-role="footer" data-position="fixed">
+     <div data-role="navbar">
+                    <ul>
+                        <li><a id="boton_inicio" href="#home" data-role="button" data-theme="b" data-icon="home">INICIO</a></li>
+                    </ul>
+     </div>
+
+</div>

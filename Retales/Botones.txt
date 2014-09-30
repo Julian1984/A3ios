@@ -1,0 +1,21 @@
+               
+  <div data-role="main" class="ui-content">
+       <p><h3 class="ui-bar ui-bar-a ui-corner-all">Elegir Tipo de Discapacidad</h3></p>
+
+      <div data-role="main" class="ui-content">
+    <button class="ui-btn ui-btn-b">Visual</button>
+  </div>
+   <div data-role="main" class="ui-content">
+    <button class="ui-btn ui-btn-b">Auditiva</button>
+  </div>
+   <div data-role="main" class="ui-content">
+    <button class="ui-btn ui-btn-b">Física</button>
+  </div>
+   <div data-role="main" class="ui-content">
+    <button class="ui-btn ui-btn-b">Mental</button>
+  </div>
+   <div data-role="main" class="ui-content">
+    <button class="ui-btn ui-btn-b">Todas</button>
+  </div>
+
+  </div>
